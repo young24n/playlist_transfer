@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "playlist transfer",
+  "version": "1.0",
+  "description": "멜론 지니 YT뮤직",
+  "icons": {
+    "16": "icons/icon_16.png",
+    "32": "icons/icon_32.png",
+    "48": "icons/icon_48.png",
+    "128": "icons/icon_128.png"
+  },
+  "action": {
+    "default_title": "main",
+    "default_popup": "URLpopup.html"
+  },
+  "permissions": [
+    "storage",
+    "tabs"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "run_at": "document_idle",
+      "js": ["contentScript.js"]
+    }
+  ]
+}
