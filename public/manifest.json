@@ -1,0 +1,21 @@
+{
+  "short_name": "main",
+  "name": "playlist transfer",
+  "description": "지니뮤직, 멜론의 재생목록을 유튜브 뮤직으로 이동",
+  "manifest_version": 3,
+  "version": "1.0.0",
+  "icons":  {
+    "16": "/icon_16.png",
+    "32": "/icon_32.png"
+  },
+  "action": {
+    "default_title": "main",
+    "default_popup": "/index.html"
+  },
+  "permissions": [
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
