@@ -11,7 +11,7 @@
   },
   "action": {
     "default_title": "main",
-    "default_popup": "URLpopup.html"
+    "default_popup": "pages/popup.html"
   },
   "permissions": [
     "storage",
