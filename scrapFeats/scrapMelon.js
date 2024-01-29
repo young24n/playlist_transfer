@@ -26,6 +26,4 @@ async function scrapMelon(url) {
     await browser.close();
 }
 
-scrapMelon("https://www.melon.com/mymusic/playlist/mymusicplaylistview_inform.htm?plylstSeq=530475094");
-
-// export default scrapMelon
+export default scrapMelon
