@@ -1,6 +1,5 @@
 const puppeteer = require('puppeteer');
 const fs = require("fs");
-const { request } = require('http');
 
 async function scrapMelon(url) {
     const browser = await puppeteer.launch({headless: "new"});
