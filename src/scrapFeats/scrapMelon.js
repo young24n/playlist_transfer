@@ -1,5 +1,4 @@
-const puppeteer = require('puppeteer');
-const fs = require("fs");
+import puppeteer from 'puppeteer';
 
 async function scrapMelon(url) {
     const browser = await puppeteer.launch({headless: "new"});
@@ -15,11 +14,6 @@ async function scrapMelon(url) {
     });
     console.log(songs);
 
-    // JSON 파일에 저장
-    fs.writeFile("playlist.json", JSON.stringify(songs), (err) => {
-        if (err) throw err;
-        console.log("파일 저장 완료");
-    });
 
     // 기본 순환 열었으면 닫아야 함
     await browser.close();

@@ -9,10 +9,10 @@
     "32": "/icon_32.png"
   },
   "action": {
-    "default_title": "main",
-    "default_popup": "/index.html"
-  },
-  "permissions": [
-    "storage"
-  ]
+      "default_popup": "index.html"
+    },
+    "permissions": [
+      "storage",
+      "tabs"
+    ]
 }
