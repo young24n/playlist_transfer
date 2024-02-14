@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './App.css';
 import scrapMelon from './scrapFeats/scrapMelon';
-import scrapGenie from './scrapFeats/scrapGenie';
+// import scrapGenie from './scrapFeats/scrapGenie';
 
 function App() {
     const [url, seturl] = useState("")
@@ -16,14 +16,7 @@ function App() {
           }}/>
       </div>
       <button className="button btnGenie btnOrange" onClick={()=>{//클릭 시 url 판단
-        if(url.includes('www.melon.com')){
           scrapMelon(url)
-        }
-        else if(url.includes('www.genie.com')){
-          scrapGenie(url)
-        }
-        else{alert("지원하지 않는 URL입니다.(멜론, 지니뮤직만 지원)")}
-
         //youtube api 땡겨온 후 재생목록 생성함수 추가
       }}/>
     </div>
