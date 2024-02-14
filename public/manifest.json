@@ -11,8 +11,11 @@
   "action": {
       "default_popup": "index.html"
     },
-    "permissions": [
+    
+    "permissions": 
+    [ 
+      "tabs" ,
+      "identity",
       "storage",
-      "tabs"
-    ]
+      "http://127.0.0.1:9222/*"]
 }
