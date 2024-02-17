@@ -10,12 +10,15 @@
   },
   "action": {
       "default_popup": "index.html"
-    },
+    }, 
+    "host_permissions": [
+      "http://127.0.0.1:9222/*"
+    ],
     
     "permissions": 
     [ 
       "tabs" ,
       "identity",
-      "storage",
-      "http://127.0.0.1:9222/*"]
+      "storage"
+    ]
 }
